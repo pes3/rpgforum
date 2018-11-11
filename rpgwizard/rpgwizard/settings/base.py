@@ -14,6 +14,7 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 from __future__ import unicode_literals
 
 import os
+import django_heroku
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
@@ -194,3 +195,4 @@ LOGGING = {
         },
     }
 }
+django_heroku.settings(locals())
