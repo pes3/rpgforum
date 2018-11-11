@@ -40,7 +40,6 @@ DATABASES = {
 }
 
 DATABASES['default']['ENGINE'] = 'django.db.backends.postgresql_psycopg2'
-DATABASES['default']['NAME'] = 'potato_db'
 
 CACHES.update({
     'default': {
