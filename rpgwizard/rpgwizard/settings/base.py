@@ -24,8 +24,16 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
 # add url
 ALLOWED_HOSTS = ['rpgforum.herokuapp.com'] 
 # Application definition
-# seting up email server
 
+
+SECRET_KEY = os.environ.get("SECRET_KEY")
+
+if SECRET_KEY is None:
+    raise KeyError("SECRET_KEY is not set in the environment variables. " +
+	"This is a security issue, and as this is under GitHub source control, I error to force myself to set it.")
+
+
+# setting up email server
 EMAIL_HOST = os.environ.get('MAILGUN_SMTP_SERVER', '')
 EMAIL_PORT = os.environ.get('MAILGUN_SMTP_PORT', '')
 EMAIL_HOST_USER = os.environ.get('MAILGUN_SMTP_LOGIN', '')

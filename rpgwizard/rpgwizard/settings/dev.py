@@ -19,8 +19,6 @@ TEMPLATES[0]['OPTIONS']['debug'] = True
 
 ADMINS = (('John', 'john@example.com'), )  # Log email to console when DEBUG = False
 
-SECRET_KEY = "DEV"
-
 ALLOWED_HOSTS = ['*', ]
 
 # INSTALLED_APPS.extend([

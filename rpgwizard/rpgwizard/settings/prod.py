@@ -17,8 +17,6 @@ DEBUG = False
 # https://docs.djangoproject.com/en/2.1/ref/settings/#admins
 ADMINS = (('John', 'john@example.com'), )
 
-SECRET_KEY = os.environ.get("SECRET_KEY", '=%re_5juda5zp^=h7a-xkzvzr*b_#&qhfcf)71v#uayrpivv=6')
-
 # https://docs.djangoproject.com/en/2.1/ref/settings/#allowed-hosts
 ALLOWED_HOSTS = ['.example.com', ]
 
